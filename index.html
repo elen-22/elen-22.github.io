@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallet Integration</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+  </head>
+  <body>
+    <h1>
+      <span>EasyToken</span>
+      <span>Wallet</span>
+    </h1>
+    <p id="intro">The best way to connect a wallet</p>
+
+    <!-- Connect Wallet Button -->
+    <div class="buttons">
+      <button id="connectButton" class="glow-on-hover">Connect Wallet</button>
+
+      <!-- New Wallet Creation Button -->
+      <button id="createWalletButton" class="glow-on-hover">
+        Create New Wallet
+      </button>
+    </div>
+
+    <!-- Token Transfer Form -->
+    <div id="transfer">
+      <p id="intro_transfer">Now, let's transfer tokens!!!</p>
+      <h2>Token Transfer</h2>
+      <form id="transferForm">
+        <label for="recipientAddress">Recipient Address:</label>
+        <input type="text" id="recipientAddress" required /><br />
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" required /><br />
+        <button type="submit" id="submit_button">Initiate Transfer</button>
+      </form>
+    </div>
+
+    <!-- Display Area -->
+    <div id="output"></div>
+
+    <!-- Include Web3.js library -->
+
+    <!-- Include your JavaScript code -->
+    <script src="app.js"></script>
+  </body>
+</html>
